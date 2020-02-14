@@ -17,7 +17,7 @@ import os
 
 config = tf.compat.v1.ConfigProto()
 config.gpu_options.allow_growth = True
-K.set_session(tf.Session(config=config))
+K.set_session(tf.compat.v1.Session(config=config))
     
 
 class EFNet():
