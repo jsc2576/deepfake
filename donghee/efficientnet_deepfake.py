@@ -39,7 +39,7 @@ class EFNet():
         effnet = efn.EfficientNetB4(weights=None,\
                                 include_top=False,\
                                 input_shape=shape)
-        effnet.load_weights(self.weight_path + 'efficientnet-b4_imagenet_1000_notop.h5')
+        #effnet.load_weights(self.weight_path + 'efficientnet-b4_imagenet_1000_notop.h5')
 
         for i, layer in enumerate(effnet.layers):
             effnet.layers[i].name = str(model_name) + "_" + layer.name
@@ -52,7 +52,7 @@ class EFNet():
         effnet = efn.EfficientNetB3(weights=None,\
                                 include_top=False,\
                                 input_shape=shape)
-        effnet.load_weights(self.weight_path + 'efficientnet-b3_imagenet_1000_notop.h5')
+        #effnet.load_weights(self.weight_path + 'efficientnet-b3_imagenet_1000_notop.h5')
 
         for i, layer in enumerate(effnet.layers):
             effnet.layers[i].name = str(model_name) + "_" + layer.name
@@ -64,7 +64,7 @@ class EFNet():
         effnet = efn.EfficientNetB2(weights=None,\
                                 include_top=False,\
                                 input_shape=shape)
-        effnet.load_weights(self.weight_path + 'efficientnet-b2_imagenet_1000_notop.h5')
+        #effnet.load_weights(self.weight_path + 'efficientnet-b2_imagenet_1000_notop.h5')
 
         for i, layer in enumerate(effnet.layers):
             effnet.layers[i].name = str(model_name) + "_" + layer.name
